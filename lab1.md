@@ -1,10 +1,7 @@
-## <p align=center>  *LAB 1 REPORT BY CHARLIE NGO*
+## *LAB 1 REPORT BY CHARLIE NGO*
 ---
-    
-| Letter | Digit | Character |
-| :----: | :---: | :-------: |
-| a      | 4     | $         |
-|        | 365   | (         |
-| b      |       | ^         |
 
-
+``[user@sahara ~]$ cd lecture1\
+[user@sahara ~/lecture1]$ pwd\
+/home/lecture1\
+[user@sahara ~/lecture1]$ ``
