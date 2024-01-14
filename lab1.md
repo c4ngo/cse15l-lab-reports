@@ -1,11 +1,9 @@
-## LAB 1 REPORT BY CHARLIE NGO
+# LAB 1 REPORT BY CHARLIE NGO
 
----
-<div dir="rtl">
 1/11/2024
 
-Command ***CD***
----
+## Command ***CD***
+
 ---
 **Question 1:** Share an example of using the command with no arguments.
 
@@ -17,8 +15,8 @@ Command ***CD***
     }
 
 1. The working directory was home
-2. I got my output because the command I used "cd" is used to change directories. The filesystem was simply "/home" and having no arguments means that nothing will happen. 
-3. The output was not an error because nothing happened after I ran the command. 
+2. I got my output because the command I used "cd" is used to change directories. The filesystem was simply "/home" and having no arguments means that nothing will happen.
+3. The output was not an error because nothing happened after I ran the command.
 
 **Question 2:** Share an example of using the command with a path to a directory as an argument.
 
@@ -46,10 +44,10 @@ Command ***CD***
 
 1. The working directory is /home
 2. I got this output because I tried changing the directory to a file. The filesystem remains to be /home
-3. I got an error because the command *cd* does not work with files. I would have gotten the error 
+3. I got an error because the command *cd* does not work with files. I would have gotten the error
 
-Command ***ls***
----
+## Command ***ls***
+
 ---
 **Question 1:** Share an example of using the command with no arguments.
 
@@ -62,7 +60,7 @@ Command ***ls***
     }
 
 1. The directory is /home.
-2. I got this output because the command *"ls"* means that it will list the files in the given current path. 
+2. I got this output because the command *"ls"* means that it will list the files in the given current path.
 3. There are no errors.
 
 **Question 2:** Share an example of using the command with a path to a directory as an argument.
@@ -76,7 +74,7 @@ Command ***ls***
     }
 
 1. The directory is lecture1.
-2. Using the command *ls* shows all the contents that is contained in the lecture1 directory. 
+2. Using the command *ls* shows all the contents that is contained in the lecture1 directory.
 3. There are no errors.
 
 **Question 3:** Share an example of using the command with a path to a file as an argument.
@@ -91,12 +89,13 @@ Command ***ls***
     }
 
 1. The directory is lecture1.
-2. Using the command *ls* in this situation returns the name of the file. I believe why this happened was because the README path only contains the README file itself. 
-3. There are no errors. 
+2. Using the command *ls* in this situation returns the name of the file. I believe why this happened was because the README path only contains the README file itself.
+3. There are no errors.
 
 ---
-COMMAND ***cat***
----
+
+## COMMAND ***cat***
+
 ---
 **Question 1:** Share an example of using the command with no arguments.
 
@@ -106,9 +105,9 @@ COMMAND ***cat***
     [user@sahara ~]$ cat
     }
 
-1. The working directory is /home. 
-2. The command appears to do nothing at first, but in the terminal I am unable to write more commands. 
-3. There are no errors. 
+1. The working directory is /home.
+2. The command appears to do nothing at first, but in the terminal I am unable to write more commands.
+3. There are no errors.
 
 **Question 2:** Share an example of using the command with a path to a directory as an argument.
 
@@ -120,7 +119,7 @@ COMMAND ***cat***
     }
 
 1. The working directory is lecture1.
-2. The command appears to give out an error. The command *cat* cannot print contents of a directory. 
+2. The command appears to give out an error. The command *cat* cannot print contents of a directory.
 3. The error occured when I tried to use the command with a directory.
 
 **Question 3:** Share an example of using the command with a path to a file as an argument.
@@ -136,4 +135,4 @@ COMMAND ***cat***
     }
 
 1. The working directory is lecture1.
-2. The command seems to have printed the contents of the file *README*. The README file had some code which printed onto the terminal. 
+2. The command seems to have printed the contents of the file *README*. The README file had some code which printed onto the terminal.
