@@ -136,3 +136,4 @@
 
 1. The working directory is lecture1.
 2. The command seems to have printed the contents of the file *README*. The README file had some code which printed onto the terminal.
+3. There are no errors.
