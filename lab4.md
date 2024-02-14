@@ -113,7 +113,7 @@ The output was displaying all the files containing `".txt"` There are 1391 lines
 
 Here is another example of using `-i`
 
-    grep -i ".tXt" find-results.txt
+    grep -i ".TXT" find-results.txt
 
 The output was the same as the previous example 
 
@@ -160,7 +160,7 @@ Here is the output
     grep: lib: Is a directory
     grep: technical: Is a directory
 
-I find this command useful if I just want to know the files or directories that contain the text pattern. If I wanted to search for `911report`, it     the `docsearch` directory down to 3 files. 
+I find this command useful if I just want to know the files or directories that contain the text pattern. If I wanted to search for `911report`, it narrows the `docsearch` directory down to 3 files. 
 
 ## `-v`
 
@@ -192,4 +192,4 @@ Here is another example of using `-v`
 The output is nothing because all lines in `biomed-size.txt` contain the pattern `biomed`. Because of this, the output on the terminal is nothing. I find this command useful because I can remove lines in a file that contain a certain phrase. In this case, I used it to narrow it down to all files that are not biomed related. 
 
 This was the source I used
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+`https://www.geeksforgeeks.org/grep-command-in-unixlinux/`
