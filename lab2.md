@@ -19,10 +19,9 @@ This is my code for ChatServer.
     String sentence = "";
     public String handleRequest(URI url) {
         if (url.getPath().equals("/add-message")) {
-            String[] parameters = url.getQuery().split("&");
+            String[] parameters = url.getQuery().split("&user=");
             String statement = parameters[0];
             String user = parameters[1];
-            user = user.substring(5);
             statement = statement.substring(2);
             if (sentence != null){
             sentence = sentence + "\n" + user + ": " + statement;
@@ -77,7 +76,7 @@ This is my code for ChatServer.
 
 #### How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
-* The values that are changed are either the `<string>` instances in the query and the `sentence` object. Depending on what `<string>` looks like in the url, the program will display on the web server the iterated values. For example if my query looks like: `s=Hello From ERC!&user=Charlie`. Then by the end of the program the result should be `Charlie: Hello+From+ERC!`. 
+* The values of whatever is replaced in `<string>` in the query ultimately affect and change `sentence` object. Depending on what `<string>` looks like in the url, the program will display on the web server the iterated values. For example if my request looks like this in the query `s=Hello From ERC!&user=Charlie`. Then the `sentence` field will produce the result `Charlie: Hello+From+ERC!`. This is because the values from the `<string>` in the query are `Hello From ERC` and `Charlie`. These are stored in `statement` and `user`. Then `sentence` takes in `statement` and `user` to create a formatted String structure. 
 
 #### Screenshot 2
 ![Screenshot 2](SecondInstance.png)
@@ -86,11 +85,11 @@ In this case, most of the things are the same.
 
 #### Which methods in your code are called?
 
-* When I run my program, the first method that is called is the `start` method in the `Server` class. The second method that is called is the `handleRequest` method in the `Handler` class. Some other methods that are used are `getPath`, `getQuery`, and `substring`. 
+* When I run my program, the first method that is called is the `handleRequest` from the `Handler` class. Some methods that are nested in `handleRequest` are the `getPath()`, `getQuery` , and `format`.  We do not call the `Server.start()` method because we already called it previously.
 
 #### What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
-  * The relevant arguments to these methods would be `3000` for `port` in the `start` method. This creates a webserver with the port 3000.
+* The relevant arguments to these methods would be `3000` for `port` in the `start` method. This creates a webserver with the port 3000.
 * The `new Handler()` argument is initiated and only able to be accessed while you are in the web server.
 * In the `handleRequest` method, the argument is a url is what gets read in the program. Some methods used are `getPath` and `getQuery`. 
 * My url is be the following `/add-message?s=Hello&user=Charlie`
@@ -120,7 +119,7 @@ Using the command line, show with ls and take screenshots of:
 
 * The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
 
-![Alt text](AbsolutePublicKey.png)
+![Alt text](PublicKeyScreenshot.png)
 
 * A terminal interaction where you log into your ieng6 account without being asked for a password.
 
