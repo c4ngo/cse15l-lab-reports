@@ -47,9 +47,9 @@ The command ran the bash script.
 
 The keys to fix the bug were the following:
 
-`/ i n d e x 1 , <down> <down> <down> <down> <down> <down> <down>, <i> ,<backspace> , 2 <esc> , : w q <enter>`
+`/v i m L i <tab> j a v a / i n d e x 1 , <down> <down> <down> <down> <down> <down> <down>, <i> ,<backspace> , 2 <esc> , : w q <enter>`
 
-The command `/index1` in vim essential goes to every `index1` instance in the code. I had to press `<down>` 7 times in order to get to the `index1` I wanted to change. `<i>` was to go into insert mode. I then deleted the 1 and replaced it with 2. Then I pressed `<esc>` to exit insert mode. Lastly I pressed `:wq` to save and exit vim.
+The command `vim ListExamples.java` goes into the vim text editior mode. `/index1` in vim essentially goes to every `index1` instance in the code. I had to press `<down>` 7 times in order to get to the `index1` I wanted to change. `<i>` was to go into insert mode. I then deleted the 1 and replaced it with 2. Then I pressed `<esc>` to exit insert mode. Lastly I pressed `:wq` to save and exit vim.
 
 The command edited the `ListExamples.java` file to fix the bug. 
 
