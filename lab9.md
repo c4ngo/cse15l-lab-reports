@@ -46,37 +46,37 @@ Here is my gradeAverage code
         if (sum >= 97){
             letterGrade = "A+";
         }
-        else if (sum >= 93){
+        if (sum >= 93){
             letterGrade = "A";
         }
-        else if (sum >= 90){
+        if (sum >= 90){
             letterGrade = "A-";
         }
-        else if (sum >= 87){
+        if (sum >= 87){
             letterGrade = "B+";
         }
-        else if (sum >= 83){
+        if (sum >= 83){
             letterGrade = "B";
         }
-        else if (sum >= 80){
+        if (sum >= 80){
             letterGrade = "B-";
         }
-        else if (sum >= 77){
+        if (sum >= 77){
             letterGrade = "C+";
         }
-        else if (sum >= 73){
+        if (sum >= 73){
             letterGrade = "C";
         }
-        else if (sum >= 70){
+        if (sum >= 70){
             letterGrade = "C-";
         }
-        else if (sum >= 67){
+        if (sum >= 67){
             letterGrade = "D+";
         }
-        else if (sum >= 65){
+        if (sum >= 65){
             letterGrade = "D";
         }
-        else if (sum >= 60){
+        if (sum >= 60){
             letterGrade = "D-";
         } else {
             letterGrade = "F";
