@@ -88,6 +88,7 @@ I tried doing what you told me to do.
 Here is my main method.
 
 ![alt text](mainmethodlab5.png)
+
 Here were my terminal outputs. 
 
 ![alt text](terminallab9.png)
